@@ -75,7 +75,7 @@ app.use(function(req, res) {
 });
 
 
-app.listen(port, () => console.log(`Listening on ${ PORT }`));
+app.listen(port, () => console.log(`Listening on ${ port }`));
 /*
 //create an http server
 https.createServer({

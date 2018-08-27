@@ -1,0 +1,217 @@
+i have to do this to survive...if i don't...i die
+timeframe this year or two. but also relationships. and become the leader. produce the product.
+
+listen more, talk less, but talk to illustrate a story
+get people talking
+conversational flow
+
+what is the goal? to get the dancing working with the meter and radius...and then add more to it
+
+review music code
+improve the hit detection on beat
+add the additions
+
+beats better
+
+enemy that shoots things at you to the beat
+
+trigger
+spawn enemy 
+
+
+when the enemy spawns, if player is within radius, enter shooting mode and shoot to the beat
+
+
+changing the beat sets
+
+don't want to penalize for ...have to repeat the level to continue. 
+
+combo system?
+
+Enemy Projectile to the beat
+
+
+Berry Baby protection
+
+
+shield protection
+projectile protection
+
+
+collecting berry babies/coins
+
+if you get hit you lose berry babies till none at all...
+
+obstacles are easier to pass if you have more berry babies
+
+
+you need a certain threshold of berry babies to unlock the next level
+
+so you can pass the level time bonus...
+
+
+music manager (beat manager)
+
+has a list of beat ops
+
+update checks if any beat windows (time + beat end) is passed and ships off events of windows passing
+update see if we're in any new beat window and adds that to the current beat window for an actor
+
+can inject beat colors into each beat op
+
+the music segment wraps a song and has the beat timeline
+
+when we get close enough to beat timeline then the music segment puts beats onto the music manager (future beats)
+
+jira 
+confluence
+
+
+
+X Email rob and writer group
+X Sign up for alumni association
+X plan for week after next (volunteer work, etc.)
+X write for an hour
+X brainstorm scenario with boss and player dances
+_turn this into an action plan
+
+_do technical stuff with moves and dancing
+_start work on scenarios
+
+Friday:
+-3:30PM work on game
+-Office
+-Download Phylum 2 hours of work till dinner
+
+-Dinner till late: architecture stuff
+
+10:30
+
+
+Saturday: 
+
+date
+
+
+
+
+
+X spawn out move
+X Gombo weak attack
+XTime slowing attack
+-AOE grenade
+-Stun grenade
+-Pick up small rocks
+-Fix up dancing
+
+-Enemies which chase Gombo
+
+
+
+
+Simplest scenario:
+
+Gombo's primary skills (dodging, charming). 
+By dodging he can throw some enemies off balance.
+By charming he can get weapons/followers to use. 
+
+Simple PC Scenario:
+Most important thing for Gombo: time, and distance to prevent people from hitting him.
+Gombo has a weak attack to stun the opponent.
+Gombo has a time slowing attack
+
+He can beat to grab a berry baby. He can throw the berry baby in the vicinity of the enemy and that attacks the enemy and weakens them. Grenades and bomb like things. Most basic is the grenade AOE for health dmg. Stun AOE for time/slow damage. Inventory.
+
+-Enemy seeks Gombo.
+-Gombo can slow time.
+-He can hit them for very little dmg
+-He can stun them temporarily.
+-He can dance and get Health Dmg Grenade...Slow time grenade...Stun grenade...
+-He can pick up small rocks to throw.
+
+Boss Scenario:
+
+-Boss does the spline moves, throwing charge.
+-Gombo can throw things at the boss to hurt him. 
+-He can slow down time as the boss is about to charge to have time to dodge.
+-He can speed up the rate at which sticks fall down.
+
+-Maybe there are different melodies or harmonies to accomplish different things, like making sticks go out faster, vs. slower, vs. charming berries, vs. making waves of fire go down, etc. 
+
+beat sets. R, G, B.
+R: for support weapons that allow you to slow time etc. (refill health, refill slow time things, grenades for stunning enemies)
+B: for charming followers to you which you can throw for more dmg.
+G: for direct attack. charming will give you things that directly attack enemies.
+I: Defense shield.
+
+
+
+Tomorrow:
+-spawn enemies?
+-move system
+-review what you might want to do in prototype
+think about using them in the context of a boss fight
+make prototype more 'playable', experimentable
+Start thinking abut how you're going to prototype the dance stuff with the other moves...
+-build out a scenario which involves dancing. boss and player
+
+Create that game
+
+-Architecture
+-->Read the game book again
+-Game/Level Design
+-->Gather resources
+-Prototyping, Vision
+-->Just start brainstorming
+-Inspiration
+-->Play
+
+Find a relationship
+
+-Alumni
+-->Join Cal Alumni association
+-->Possibly join the alumni chapter https://www.facebook.com/CalAlumniBOP/?fref=ts
+
+-Volunteer Work
+-->Join an event for Xmas: https://www.volunteermatch.org/search?l=San%20Francisco%2C%20CA%2094102&k=Homeless
+
+-More writing classes/groups/meetups:
+-->ask for classes, research for meetup
+
+-Misc Class
+-->Salsa, self defense, toastmasters
+
+-Girlschase
+
+Find your flow
+-Writing every day
+-->1 hour
+-Concentrated reading
+-->1 hour
+-Playing games again (2D)?
+-->1 hour?
+
+every 2 days: check in
+
+
+
+To do:
+
+fix event system
+
+redo:
+
+have more conf. in oneself: 
+if you feel unhappy about something. write it down in prose, but don't rashly express it.
+then talk to the person about it rationally and compromise/be prepared to leave if things don't improve.
+be a little more patient...a little, but move fast when the condition sare right. push for what you want. 
+
+
+What's my agenda for the day?
+
+think about kicking out the rewards as gameobjects
+
+
+
+8 objects:
+art: 2 more backgrounds

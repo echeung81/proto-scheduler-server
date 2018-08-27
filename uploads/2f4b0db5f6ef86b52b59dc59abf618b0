@@ -1,0 +1,37 @@
+Failures of engineering:
+You make a shitty product
+->Lack of knowledge (need to open eyes to see more techniques, know-how)
+->Lack of experience (don't know how to handle situation)
+->Lack of forethought (laziness or time pressure)
+->Failure to communicate directly, to fix flaws in the system
+
+Failures of marketing:
+You have a great product, but don't know how to promote it
+
+->No/inappropriate promotion in the wrong market/audience
+->Failure to broadcast your product
+->Failure to brand to the public. No clear identity
+
+Failures of business:
+
+->Unclear vision, unclear goals, unclear culture
+->Make a product no one wants
+->Work on an intractable product 
+->Incompetant/unmotivated staff
+->Fail to bring in revenue
+->Poor organization ups dev time
+
+
+When do we initialize?
+
+When we open up the main shop menu
+
+On Failure, try to reconnect. Or cancel, which closes the store
+
+When we open the buy adventure menu
+
+On failure, try to reconnect, or cancel, which sloes the buy adventure menu
+
+When we make the purchase:
+
+If it's not initialized, pop up the menu saying we couldn't connect and show the last reason why we couldn't initailize. Give option to try again which calls buy product id, or cancel which closes the dialog

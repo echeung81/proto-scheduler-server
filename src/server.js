@@ -10,7 +10,7 @@ console.log('STARTING APP...');
 
 //express setup
 var app = express();
-var port =  process.env.PORT || 3000;
+var port =  process.env.PORT || 5000;
 
 //mongo db setup
 const mongoURL = 'mongodb://localhost:27017/';
@@ -74,10 +74,13 @@ app.use(function(req, res) {
   res.status(404).send({url: req.originalUrl + ' not found'})
 });
 
+
+app.listen(port, () => console.log(`Listening on ${ PORT }`));
+/*
 //create an http server
 https.createServer({
   key: fs.readFileSync('server.key'),
   cert: fs.readFileSync('server.cert')
-}, app).listen(port);
+}, app).listen(port); */
 
 console.log('task server started on ' + port);

@@ -6,6 +6,8 @@ var fs = require('fs');
 var https = require('https');
 var request = require('request-promise');  
 
+console.log('STARTING APP...');
+
 //express setup
 var app = express();
 var port =  process.env.PORT || 3000;
@@ -26,6 +28,7 @@ var spRoutes = require('./routes/ScheduledPostRoutes');
 spRoutes(app);
 
 app.get('/ping', function(req, res) {
+	console.log('ey? anything happening');
 	return res.send('pong');
 });
 

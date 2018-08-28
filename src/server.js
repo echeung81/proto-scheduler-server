@@ -65,7 +65,7 @@ app.get('/verifyFBGrant', (req, res) => {
 			client_id: '473670806444100',
 			client_secret: '2f24aa03bbdffffdf519877e535c3f29',
 			code: req.query.code,
-			redirect_uri = 'https://warm-shore-15013.herokuapp.com/codeForToken'
+			redirect_uri: 'https://warm-shore-15013.herokuapp.com/codeForToken'
 		}
 	}
 

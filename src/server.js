@@ -28,7 +28,6 @@ var spRoutes = require('./routes/ScheduledPostRoutes');
 spRoutes(app);
 
 app.get('/ping', function(req, res) {
-	console.log('ey? anything happening');
 	return res.send('pong');
 });
 

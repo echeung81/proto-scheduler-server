@@ -56,12 +56,26 @@ app.get('/grantFBPermissions', (req, res) =>  {
 
 //redirect after user grants permissions to manage and publish pages
 app.get('/verifyFBGrant', (req, res) => {
-	console.log('hostname: ' + req.hostname);
-	console.log('body: ' + JSON.stringify(req.body, null, 4));
-	console.log('ip:' + req.ip);
-	console.log('query string: ' + JSON.stringify(req.query, null, 4));
 
-	res.send(req.query.code);
+	const options = {
+
+		method: 'POST',
+		uri: 'https://graph.facebook.com/v3.1/oauth/access_token',
+		qs: {
+			client_id: '473670806444100',
+			client_secret: '2f24aa03bbdffffdf519877e535c3f29',
+			code: req.query.code,
+			redirect_uri = 'https://warm-shore-15013.herokuapp.com/codeForToken'
+		}
+	}
+
+	request(options).then(fbRes => {
+			res.json(fbRes);
+		});
+});
+
+app.get('/codeForToken', (req, res) => {
+	res.send('success token');
 });
 
 //client react app

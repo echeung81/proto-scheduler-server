@@ -48,7 +48,7 @@ app.get('/testpost/:tid', (req, res) => {
 			res.json(fbRes);
 		});
 });
-
+s
 //FB permissions grants
 app.get('/grantFBPermissions', (req, res) =>  {
 	res.sendFile(path.join(__dirname, '../dist/app/fbPagePermissions.html'));

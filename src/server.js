@@ -38,8 +38,8 @@ app.get('/testpost/:tid', (req, res) => {
 		method: 'POST',
 		uri: 'https://graph.facebook.com/v3.1/1937546926538760/feed',
 		qs: {
-			access_token: 'EAAGuzRQomEQBAENYmLXzxBOZC3VLYXT0ucZBu7oEwnnAB0QNc2TcE8yAhZCfHaaLizEi1MZBPghnNYBZAMGrq0gAOLajMJdk0VMNI78dvxZBTV02ugd9XFzDWtuSyMavrxheDYohTS5NTVtTT4BB5ZBYTZCapbeZAGboHSw9AxYs7ngZDZD',
-			message: 'testing testing 12' + req.params.tid
+			access_token: 'EAAGuzRQomEQBAPbTX93GVt0UV6EZAP8r4IEuJKBfZBBJ8zThqUAJOQc6xRfxBT15RPpWQQpYvyqUeL0X8pBVe4QKOQETmYSwYZAZAQZABlYAdeoGlGqHI58TM0Hv5PEl2FRRn2DE9F7A6ULjD6ZBXJn5ElZA3mgFJEZD',
+			message: 'testing testing 122' + req.params.tid
 		}
 	}
 
@@ -83,3 +83,11 @@ https.createServer({
 }, app).listen(port); */
 
 console.log('task server started on ' + port);
+
+/*
+
+https://graph.facebook.com/v3.1/oauth/access_token?
+   client_id=473670806444100&redirect_uri=https://warm-shore-15013.herokuapp.com/verifyFBGrant&client_secret=2f24aa03bbdffffdf519877e535c3f29&code=AQCglqNCCX2bjFb95i7b2oRW_dfzpxOn70Q3pjI8YHJOcTPfjYBkkYTouBlv9LxJRVj3oT4G_xtJ0O5okBS9S6L6rKBUZ-VkJbl1JEUwAMylWiFJNikpNY94gI41rz4D-SKhszV8FL_-Do5E0m524aRFB3qwLQmdT9pToK4mJZk_-d-oaKhcF7a07NcPN74WNJ3b_1MEyHCSt2a-A2iR-J9rtIGqukFdSLsJ2W0F9R6EHVJVMbUpNMfy_47uuShvfy_DKV-M6jAOpBm-YkFMq9GgkySQaMU1-hL36ZgdjNHi18SVYWHcLumVbLlFUjXn604
+
+
+   */

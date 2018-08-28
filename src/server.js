@@ -61,8 +61,7 @@ app.get('/verifyFBGrant', (req, res) => {
 	console.log('ip:' + req.ip);
 	console.log('query string: ' + JSON.stringify(req.query, null, 4));
 
-	res.send('success');
-
+	res.send(req.query.code);
 });
 
 //client react app

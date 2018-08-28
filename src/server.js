@@ -57,6 +57,8 @@ app.get('/grantFBPermissions', (req, res) =>  {
 //redirect after user grants permissions to manage and publish pages
 app.get('/verifyFBGrant', (req, res) => {
 
+	if(req.query.code) {
+
 	const options = {
 
 		method: 'POST',
@@ -65,13 +67,19 @@ app.get('/verifyFBGrant', (req, res) => {
 			client_id: '473670806444100',
 			client_secret: '2f24aa03bbdffffdf519877e535c3f29',
 			code: req.query.code,
-			redirect_uri: 'https://warm-shore-15013.herokuapp.com/codeForToken'
+			redirect_uri: 'https://warm-shore-15013.herokuapp.com/verifyFBGrant'
 		}
-	}
+	};
 
 	request(options).then(fbRes => {
 			res.json(fbRes);
 		});
+
+	} else {
+
+		console.log('non code verifyFBGrant: ' + JSON.stringify(req.query, null, 2));
+
+	}
 });
 
 app.get('/codeForToken', (req, res) => {

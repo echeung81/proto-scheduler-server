@@ -13,11 +13,13 @@ var app = express();
 var port =  process.env.PORT || 5000;
 
 //mongo db setup
-const mongoURL = 'mongodb://localhost:27017/';
-const dbName = 'scheduler-proto';
+//const mongoURL = 'mongodb://localhost:27017/';
+//const dbName = 'scheduler-proto';
+
+const connectionString = 'mongodb://heroku_vchg79n9:fkibj9hmqqsguj7jg9pm36mbh6@ds137102.mlab.com:37102/heroku_vchg79n9';
 
 mongoose.Promise = global.Promise;
-mongoose.connect(mongoURL + dbName);
+mongoose.connect(connectionString);
 
 //body parser for parsing http requests
 app.use(bodyParser.urlencoded({ extended: true}));
